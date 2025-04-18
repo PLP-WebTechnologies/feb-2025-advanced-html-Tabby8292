@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Assignment</title>
+</head>
+<body>
+
+    <!-- Ordered List with Roman Numerals -->
+    <h2>My Favorite Books</h2>
+    <ol type="I">
+        <li>The Great Gatsby</li>
+        <li>To Kill a Mockingbird</li>
+        <li>1984</li>
+        <li>Pride and Prejudice</li>
+        <li>The Catcher in the Rye</li>
+    </ol>
+
+    <!-- External Image from Pexels -->
+    <h2>Beautiful Nature Image</h2>
+    <img src="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg" 
+         alt="Nature View from Pexels" 
+         width="600" />
+
+    <!-- Table of 5 Contacts -->
+    <h2>Contact List</h2>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John kimani</td>
+                <td>123 Elm Street</td>
+                <td>+2544567890</td>
+                <td>john@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Jane wanjiku</td>
+                <td>456 Oak Avenue</td>
+                <td>+2547654321</td>
+                <td>jane@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Tabitha wanjiku</td>
+                <td>789 Pine Road</td>
+                <td>+2542334455</td>
+                <td>tabitha@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Maria Wanjiku</td>
+                <td>321 Maple Blvd</td>
+                <td>+2543344556</td>
+                <td>maria@gmail.com</td>
+            </tr>
+            <tr>
+                <td>joseph kamau</td>
+                <td>654 Cedar Lane</td>
+                <td>+2544455667</td>
+                <td>joseph@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+        <!-- Name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required minlength="6">
+        <br><br>
+
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+
+        <!-- Gender (Radio Buttons) -->
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label><br><br>
+
+        <!-- Course Selection (Dropdown) -->
+        <label for="course">Choose a course:</label>
+        <select id="course" name="course" required>
+            <option value="">--Select--</option>
+            <option value="web">Web Development</option>
+            <option value="data">Data Science</option>
+            <option value="ai">Artificial Intelligence</option>
+        </select>
+        <br><br>
+
+        <!-- Interests (Checkboxes) -->
+        <label>Interests:</label><br>
+        <input type="checkbox" id="coding" name="interests" value="Coding">
+        <label for="coding">Coding</label><br>
+        <input type="checkbox" id="music" name="interests" value="Music">
+        <label for="music">Music</label><br>
+        <input type="checkbox" id="sports" name="interests" value="Sports">
+        <label for="sports">Sports</label><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+</html>
